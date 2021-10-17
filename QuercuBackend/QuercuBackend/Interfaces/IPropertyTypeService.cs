@@ -12,5 +12,7 @@ namespace QuercuBackend.Interfaces
         Task<ActionResult<IEnumerable<PropertyType>>> GetAll();
         Task<ActionResult<IEnumerable<PropertyType>>> Save(PropertyType propertyType);
         Task<ActionResult<IEnumerable<PropertyType>>> PropertyTypeDelete(int id);
+
+        Task<ActionResult<IEnumerable<PropertyType>>> GetPropertyTypeById(int id);
     }
 }

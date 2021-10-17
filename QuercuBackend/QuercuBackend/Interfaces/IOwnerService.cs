@@ -12,5 +12,7 @@ namespace QuercuBackend.Interfaces
         Task<ActionResult<IEnumerable<Owner>>> GetAll();
         Task<ActionResult<IEnumerable<Owner>>> Save(Owner owner);
         Task<ActionResult<IEnumerable<Owner>>> OwnerDelete(int id);
+
+        Task<ActionResult<IEnumerable<Owner>>> GetOwnerById(int id);
     }
 }

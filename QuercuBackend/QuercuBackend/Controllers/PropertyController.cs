@@ -98,5 +98,21 @@ namespace QuercuBackend.Controllers
                 return BadRequest(ex.Message);
             }
         }
+        
+        [HttpGet]
+        [Route("Property")]
+        public async Task<ActionResult<IEnumerable<Property>>> GetPropertyById(int id)
+        {
+            Property property = null;
+            try
+            {
+                property = await _context.Properties.Where(x => x.Id == id).FirstOrDefaultAsync();
+                return Ok(property);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
     }
 }
