@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace QuercuBackend.Repository.Interfaces
 {
-    interface IGenericRepository<IEntity> where IEntity : class
+    public interface IGenericRepository<IEntity> where IEntity : class
     {
         Task<IEnumerable<IEntity>> GetAll();
         Task<IEntity> GetById(int id);
-        Task<IEntity> Create();
-        Task<IEntity> Update();
+        Task<IEntity> Create(IEntity entity);
+        Task<IEntity> Update(IEntity entity);
         Task Delete(int id);
 
     }
