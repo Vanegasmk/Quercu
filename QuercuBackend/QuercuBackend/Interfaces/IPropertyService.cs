@@ -10,9 +10,7 @@ namespace QuercuBackend.Services.Interfaces
     public interface IPropertyService
     {
         Task<ActionResult<IEnumerable<Property>>> GetAll();
-        Task<ActionResult<Property>> GetOwnerById(int id);
-
-        Task<ActionResult<Property>> Update(int id, Property property);
-        Task<ActionResult<Property>> Delete(int id);
+        Task<ActionResult<IEnumerable<Property>>> Save(Property property);
+        Task<ActionResult<IEnumerable<Property>>> PropertyDelete(int id);
     }
 }
