@@ -101,6 +101,22 @@ namespace QuercuBackend.Controllers
             }
         }
 
+        [HttpGet]
+        [Route("Owner")]
+        public async Task<ActionResult<IEnumerable<Owner>>> GetOwnerById(int id)
+        {
+            Owner owner = null;
+            try
+            {
+                owner = await _context.Owners.Where(x => x.Id == id).FirstOrDefaultAsync();
+                return Ok(owner);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
 
     }
 }
