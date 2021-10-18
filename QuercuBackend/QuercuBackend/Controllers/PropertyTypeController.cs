@@ -66,7 +66,6 @@ namespace QuercuBackend.Controllers
 
 
         [HttpPost]
-        [Route("Save")]
         public async Task<ActionResult<IEnumerable<PropertyType>>> Save([FromBody] PropertyType propertyType)
         {
             int regress = 0;
@@ -83,7 +82,7 @@ namespace QuercuBackend.Controllers
                 }
                 else
                 {
-                    _context.Entry(propertyType).State = EntityState.Modified;
+                    _context.Entry(propertyTypeFind).CurrentValues.SetValues(propertyType);
                 }
 
                 regress = _context.SaveChanges();

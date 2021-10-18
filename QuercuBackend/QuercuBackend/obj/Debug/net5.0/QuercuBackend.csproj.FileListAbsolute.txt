@@ -35,5 +35,9 @@ D:\Dev\Quercu\QuercuBackend\QuercuBackend\obj\Debug\net5.0\QuercuBackend.dll
 D:\Dev\Quercu\QuercuBackend\QuercuBackend\obj\Debug\net5.0\ref\QuercuBackend.dll
 D:\Dev\Quercu\QuercuBackend\QuercuBackend\obj\Debug\net5.0\QuercuBackend.pdb
 D:\Dev\Quercu\QuercuBackend\QuercuBackend\obj\Debug\net5.0\QuercuBackend.genruntimeconfig.cache
-D:\Dev\Quercu\QuercuBackend\QuercuBackend\obj\Debug\net5.0\QuercuBackend.csproj.AssemblyReference.cache
 D:\Dev\Quercu\QuercuBackend\QuercuBackend\obj\Debug\net5.0\QuercuBackend.csproj.CopyComplete
+D:\Dev\Quercu\QuercuBackend\QuercuBackend\bin\Debug\net5.0\Microsoft.AspNetCore.JsonPatch.dll
+D:\Dev\Quercu\QuercuBackend\QuercuBackend\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+D:\Dev\Quercu\QuercuBackend\QuercuBackend\bin\Debug\net5.0\Newtonsoft.Json.dll
+D:\Dev\Quercu\QuercuBackend\QuercuBackend\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
+D:\Dev\Quercu\QuercuBackend\QuercuBackend\obj\Debug\net5.0\QuercuBackend.csproj.AssemblyReference.cache

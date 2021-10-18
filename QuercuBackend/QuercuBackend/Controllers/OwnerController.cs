@@ -68,7 +68,6 @@ namespace QuercuBackend.Controllers
         
 
         [HttpPost]
-        [Route("Save")]
         public async Task<ActionResult<IEnumerable<Owner>>> Save([FromBody]Owner owner)
         {
             int regress = 0;
@@ -85,7 +84,7 @@ namespace QuercuBackend.Controllers
                 }
                 else
                 {
-                    _context.Entry(owner).State = EntityState.Modified;
+                    _context.Entry(ownerFind).CurrentValues.SetValues(owner);
                 }
 
                 regress = _context.SaveChanges();
