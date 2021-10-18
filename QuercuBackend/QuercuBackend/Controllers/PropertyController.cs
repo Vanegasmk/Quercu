@@ -27,7 +27,9 @@ namespace QuercuBackend.Controllers
             IEnumerable<Property> properties = null;
             try
             {
-                properties = await _context.Properties.ToListAsync();
+                properties = await _context.Properties.Include(x => x.Owner)
+                                                      .Include(x => x.PropertyType)
+                                                      .ToListAsync();
                 return Ok(properties);
             }
             catch (Exception ex)
