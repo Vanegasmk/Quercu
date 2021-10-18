@@ -31,9 +31,9 @@ D:\Dev\Quercu\QuercuBackend\QuercuBackend\obj\Debug\net5.0\staticwebassets\Querc
 D:\Dev\Quercu\QuercuBackend\QuercuBackend\obj\Debug\net5.0\staticwebassets\QuercuBackend.StaticWebAssets.xml
 D:\Dev\Quercu\QuercuBackend\QuercuBackend\obj\Debug\net5.0\scopedcss\bundle\QuercuBackend.styles.css
 D:\Dev\Quercu\QuercuBackend\QuercuBackend\obj\Debug\net5.0\QuercuBackend.RazorTargetAssemblyInfo.cache
-D:\Dev\Quercu\QuercuBackend\QuercuBackend\obj\Debug\net5.0\QuercuBackend.csproj.CopyComplete
 D:\Dev\Quercu\QuercuBackend\QuercuBackend\obj\Debug\net5.0\QuercuBackend.dll
 D:\Dev\Quercu\QuercuBackend\QuercuBackend\obj\Debug\net5.0\ref\QuercuBackend.dll
 D:\Dev\Quercu\QuercuBackend\QuercuBackend\obj\Debug\net5.0\QuercuBackend.pdb
 D:\Dev\Quercu\QuercuBackend\QuercuBackend\obj\Debug\net5.0\QuercuBackend.genruntimeconfig.cache
 D:\Dev\Quercu\QuercuBackend\QuercuBackend\obj\Debug\net5.0\QuercuBackend.csproj.AssemblyReference.cache
+D:\Dev\Quercu\QuercuBackend\QuercuBackend\obj\Debug\net5.0\QuercuBackend.csproj.CopyComplete

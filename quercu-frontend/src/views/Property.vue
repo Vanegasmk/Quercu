@@ -26,12 +26,15 @@
           </table>
         </div>
       </div>
-      
     </div>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  data: () => ({
+    apiUrl: "",
+  })
+}
 </script>
 
