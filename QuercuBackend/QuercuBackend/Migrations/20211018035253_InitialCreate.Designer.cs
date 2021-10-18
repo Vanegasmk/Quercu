@@ -9,7 +9,7 @@ using QuercuBackend.Data;
 namespace QuercuBackend.Migrations
 {
     [DbContext(typeof(PropertiesContext))]
-    [Migration("20211017170624_InitialCreate")]
+    [Migration("20211018035253_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

@@ -31,6 +31,6 @@ namespace QuercuBackend.Models
         [Column(TypeName = "varchar(255)")]
         public string Address { get; set; }
 
-        public virtual ICollection<Property> Properties { get; set; }
+        public  ICollection<Property> Properties { get; set; }
     }
 }
