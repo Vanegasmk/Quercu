@@ -12,6 +12,7 @@ using QuercuBackend.Data;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace QuercuBackend
@@ -29,6 +30,7 @@ namespace QuercuBackend
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<PropertiesContext>(opt => opt.UseNpgsql(Configuration.GetConnectionString("DefaultConnection")).UseSnakeCaseNamingConvention());
+            services.AddControllers().AddJsonOptions(x => x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.Preserve);
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
