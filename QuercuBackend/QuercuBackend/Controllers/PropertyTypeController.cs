@@ -21,6 +21,11 @@ namespace QuercuBackend.Controllers
             _context = context;
         }
 
+        #region
+        /// <summary>
+        /// GetAll
+        /// </summary>
+        /// <returns>All Property Types</returns>
         [HttpGet]
         public async Task<ActionResult<IEnumerable<PropertyType>>> GetAll()
         {
@@ -37,7 +42,14 @@ namespace QuercuBackend.Controllers
             }
 
         }
+        #endregion
 
+        #region
+        /// <summary>
+        /// PropertyTypeDelete
+        /// </summary>
+        /// <param name="id">Id from Property Type Object</param>
+        /// <returns>Return a PropertyType  Delete</returns>
         [HttpPost]
         [Route("Delete")]
         public async Task<ActionResult<IEnumerable<PropertyType>>> PropertyTypeDelete(int id)
@@ -62,9 +74,15 @@ namespace QuercuBackend.Controllers
                 return BadRequest(ex.Message);
             }
         }
+        #endregion
 
 
-
+        #region
+        /// <summary>
+        /// Save
+        /// </summary>
+        /// <param name="propertyType">Property Type Object</param>
+        /// <returns>Return a new Property Type or Update Property Type</returns>
         [HttpPost]
         public async Task<ActionResult<IEnumerable<PropertyType>>> Save([FromBody] PropertyType propertyType)
         {
@@ -97,7 +115,14 @@ namespace QuercuBackend.Controllers
                 return BadRequest(ex.Message);
             }
         }
+        #endregion
 
+        #region
+        /// <summary>
+        /// GetPropertyTypeById
+        /// </summary>
+        /// <param name="id">Id From Property Type Object</param>
+        /// <returns>Return Property Type Object</returns>
         [HttpGet]
         [Route("PropertyType")]
         public async Task<ActionResult<IEnumerable<PropertyType>>> GetPropertyTypeById(int id)
@@ -114,6 +139,6 @@ namespace QuercuBackend.Controllers
                 return BadRequest(ex.Message);
             }
         }
-
+        #endregion
     }
 }

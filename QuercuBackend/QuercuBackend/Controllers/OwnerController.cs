@@ -23,6 +23,11 @@ namespace QuercuBackend.Controllers
             _context = context;
         }
 
+        #region
+        /// <summary>
+        /// GetAll
+        /// </summary>
+        /// <returns>Return all Owners</returns>
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Owner>>> GetAll()
         {
@@ -39,7 +44,14 @@ namespace QuercuBackend.Controllers
             }
 
         }
+        #endregion
 
+        #region
+        /// <summary>
+        /// OwnerDelete
+        /// </summary>
+        /// <param name="id">Id From Owner Objet</param>
+        /// <returns>Return a Owner Delete</returns>
         [HttpPost]
         [Route("Delete")]
         public async Task<ActionResult<IEnumerable<Owner>>> OwnerDelete(int id)
@@ -64,9 +76,15 @@ namespace QuercuBackend.Controllers
                 return BadRequest(ex.Message);
             }
         }
+        #endregion
 
-        
 
+        #region
+        /// <summary>
+        /// Save
+        /// </summary>
+        /// <param name="owner">Owner Objet</param>
+        /// <returns>Return a new Owner or Update Owner</returns>
         [HttpPost]
         public async Task<ActionResult<IEnumerable<Owner>>> Save([FromBody]Owner owner)
         {
@@ -99,7 +117,14 @@ namespace QuercuBackend.Controllers
                 return BadRequest(ex.Message);
             }
         }
+        #endregion
 
+        #region
+        /// <summary>
+        /// GetOwnerById
+        /// </summary>
+        /// <param name="id">Id From Owner Object</param>
+        /// <returns>A Owner Object</returns>
         [HttpGet]
         [Route("Owner")]
         public async Task<ActionResult<IEnumerable<Owner>>> GetOwnerById(int id)
@@ -115,6 +140,7 @@ namespace QuercuBackend.Controllers
                 return BadRequest(ex.Message);
             }
         }
+        #endregion
 
 
     }
